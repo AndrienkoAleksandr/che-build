@@ -47,7 +47,7 @@ RUN mkdir /home/user/apache-maven-$MAVEN_VERSION && \
 ENV NODE_VERSION=5.11.0 \
     NODE_PATH=/usr/local/lib/node_modules 
 	
-	RUN set -ex \
+RUN set -ex \
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
     94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
