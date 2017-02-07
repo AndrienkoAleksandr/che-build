@@ -10,6 +10,3 @@ docker rmi -f $(docker images ${REPOSITORY} -q)
 
 echo "********************* Build image *****************************"
 docker build -t ${REPOSITORY} .
-
-echo "********************* Run container *****************************"
-docker run -d -v ~/projects/che:/che aandrienko/build-che tail -f /dev/null
